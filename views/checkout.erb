@@ -1,0 +1,25 @@
+<h1>Checkout Output</h1>
+
+<h4>User: <%= @user %> </h4> 
+<br>
+<h4>Shipping Address:<%=  @shipping_address %> </h4> 
+<h4>Payment method:<%= @payment %></h4> 
+<br>
+<hr>
+<h4>Special Item</h4> 
+<p> Item: <%= @special_item %> </p>
+<p> Item Cost: <%= @special_item_price  %></p>
+<br>
+<hr>
+<% @items.each.with_index do |item, index| %>
+
+ <p>Item Name: <%= @item_name[index]  %> </p>
+ <p>Item Price: <%= @item_price [index]  %> </p>
+ <p>Item Quantity: <%= @item_quantity[index]  %> </p>
+ <p>Item Total: <%= @item_total[index]  %> </p>
+ <hr>
+ <% end %>
+
+
+
+
