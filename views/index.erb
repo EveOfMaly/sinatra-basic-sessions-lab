@@ -1,1 +1,54 @@
+<form method="POST" action='/checkout'> 
+    <h1>Amazon Checkout Flow</h1>
+    <h2>Step 1</h2>
+    <lable>User: </lable>
+    <input type="text" id="user" name="user">
+    <br>
+    <lable>Shipping Address: </lable>
+    <input type="text" id="shipping_address" name="shipping_address">
+    <br>
+    <h2>Step 1</h2>
+    <lable>Payment Method </lable>
+    <input type="text" id="payment_method" name="payment_method">
+    <h2>Step 3</h2>
+    <lable>Item Name: </lable>
+    <input type="text" id="item" name="item">
+    <br>
+    <lable>Item Price: </lable>
+     <input type="text" id="item_cost" name="item_cost">
+    <br>
+    <h4>Using nested forms </h4>
+    <lable>Item Name: </lable>
+    <input type="text" id="item_1_name" name="[items][][name]">
+    <br>
+    <lable>Item price: </lable>
+    <input type="text" id="item_1_price" name="items][][price]">
+    <br>
+    <lable>Item Quantity: </lable>
+    <input type="text" id="item_1_bio" name="[items][][quantity]">
+    <hr>
+    <lable>Item Name: </lable>
+    <input type="text" id="item_2_name" name="[items][][name]">
+    <br>
+    <lable>Item price: </lable>
+    <input type="text" id="item_2_price" name="[items][][price]">
+    <br>
+    <lable>Item Quantity: </lable>
+    <input type="text" id="item_2_bio" name="[items][][quantity]">
+    <hr>
+    <lable>Item Name: </lable>
+    <input type="text" id="item_3_name" name="[items][][name]">
+    <br>
+    <lable>Item price: </lable>
+    <input type="text" id="item_3_price" name="[items][][price]">
+    <br>
+    <lable>Item Quantity: </lable>
+    <input type="text" id="item_3_bio" name="[items][][quantity]">
+    <hr>
+    <br>
+    <br>
+    <button>submit</button>
 
+
+
+</form>
